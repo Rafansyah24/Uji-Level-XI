@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    height: 1024px;
+    width: 273px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: #0F3D3E;
+}
+
+.sidebar h3 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sidebar .menu {
+    display: flex;
+    flex-direction: column;
+
+    width: 200px;
+    margin-top: 100px;
+}
+
+.sidebar .menu .button {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .menu a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 25px;
+    position: relative;
+}
+
+.sidebar .menu p {
+    padding: 30px;
+}
+
+.menu a:after {
+    content: "";
+    position: absolute;
+    background-color: #E2DCC8;
+    height: 6px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu a:hover::after{
+    width: 100px;
+}
+
+.contain {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 82%;
+}
+
+.contain .header {
+    padding: 50px;
+    padding-bottom: 65%;
+    /* margin-bottom: 55%; */
+    margin-left: 377px;
+    margin-right: 375px;
+    position: absolute;
+}
+
+.contain .table .data {
+    padding-bottom: 20%;
+}
+
+.link_tmbh h4 {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: -65px;
+    margin-top: -250px;
+    text-align: center;
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+.link_tmbh h4 a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #100F0F;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table {
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    margin-top: 328px;
+} 
+
+.table table tr th {
+    padding: 55px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #0F3D3E;
+    font-size: 24px;
+    font-weight: 700;
+    color: #E2DCC8;
+}
+
+.table table tr td {
+    /* padding: 55px; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #E2DCC8;
+}
