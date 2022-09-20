@@ -6,6 +6,9 @@
     font-family: 'Monserrat', sans-serif;
 }
 
+body{
+    background-color: #F7EFE7;
+}
 .container {
     display: flex;
 }
@@ -17,6 +20,13 @@
     align-items: center;
     display: flex;
     background-color: #bfb0a0;
+}
+
+.sidebar .logo {
+    /* background-color: aqua; */
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .sidebar h3 {
@@ -113,8 +123,8 @@
 }
 
 .table {
-    position: relative;
-    justify-content: center;
+    /* position: relative;
+    justify-content: center; */
     margin: auto;
     margin-top: 328px;
 } 
@@ -204,4 +214,71 @@
     margin-left: 500px;
     position: absolute;
     color: #312c38;
+}
+
+
+.link_tmbh-buku h4 {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 85px;
+    margin-top: -250px;
+    text-align: center;
+    width: 220px;
+    border-bottom: 2px solid #312c38;
+    padding: 5px;
+    /* background-color: aqua; */
+}
+
+.link_tmbh-buku h4 a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #312c38;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table-buku {
+    /* position: relative;
+    justify-content: center; */
+    margin: auto;
+    margin-top: 328px;
+    width: 1080px;
+} 
+
+.table-buku table tr th {
+    padding: 55px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #e2dcc8;
+    font-size: 24px;
+    font-weight: 700;
+    color: #312c38;
+}
+
+.table-buku table tr td {
+    /* padding: 55px; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #bfb0a0;
+}
+
+.table-buku tr td #a1 {
+    border: 1px solid #312c38;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+}
+
+.table-buku tr td #a2 {
+    border: 1px solid #312c38;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
 }
