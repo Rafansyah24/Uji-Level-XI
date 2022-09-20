@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     display: flex;
-    background-color: #0F3D3E;
+    background-color: #bfb0a0;
 }
 
 .sidebar h3 {
@@ -45,7 +45,7 @@
 
 .sidebar .menu a{
     text-decoration: none;
-    color: #f1f1f1;
+    color: #312c38;
     font-size: 25px;
     position: relative;
 }
@@ -57,7 +57,7 @@
 .menu a:after {
     content: "";
     position: absolute;
-    background-color: #E2DCC8;
+    background-color: #f7f7f7;
     height: 6px;
     width: 0;
     left: 0;
@@ -84,6 +84,7 @@
     margin-left: 377px;
     margin-right: 375px;
     position: absolute;
+    color: #312c38;
 }
 
 .contain .table .data {
@@ -94,17 +95,19 @@
     display: flex;
     position: absolute;
     justify-content: center;
-    left: -65px;
+    left: 155px;
     margin-top: -250px;
     text-align: center;
-    width: 50%;
+    width: 220px;
+    border-bottom: 2px solid #312c38;
+    padding: 5px;
     /* background-color: aqua; */
 }
 
 .link_tmbh h4 a {
     font-size: 24px;
     font-weight: bold;
-    color: #100F0F;
+    color: #312c38;
     text-decoration: none;
     cursor: pointer;
 }
@@ -120,15 +123,85 @@
     padding: 55px;
     padding-bottom: 15px;
     padding-top: 15px;
-    background-color: #0F3D3E;
+    background-color: #e2dcc8;
     font-size: 24px;
     font-weight: 700;
-    color: #E2DCC8;
+    color: #312c38;
 }
 
 .table table tr td {
     /* padding: 55px; */
     padding-bottom: 30px;
     padding-top: 30px;
-    background-color: #E2DCC8;
+    background-color: #bfb0a0;
+}
+
+.table tr td #a1 {
+    border: 1px solid #312c38;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+}
+
+.table tr td #a2 {
+    border: 1px solid #312c38;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+}
+
+.content-tambah table{
+    background-color: #bfb0a0;
+    width: 55%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 50px;
+    margin: 250px;
+    margin-top: 16%;
+    position: absolute;
+    border-radius: 15px;
+}
+
+
+.input {
+    padding-left: 10px;
+    width: 80%;
+    height: 35px;
+    border: 1px solid #312c38;
+    border-bottom: 1px solid #e2dcc8;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.submit {
+    padding: 12px 14px;
+    background: #fff;
+    color: #312c38;
+    border-radius: 5px;
+    margin-top: 20px;
+    float: right;
+    margin-right: 90px;
+}
+
+.text-area {
+    padding-left: 10px;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #312c38;
+    border-bottom: 1px solid #e2dcc8;
+    margin-top: 20px;
+}
+.content-tambah .header {
+    margin-top: 8%;
+    margin-left: 500px;
+    position: absolute;
+    color: #312c38;
 }
