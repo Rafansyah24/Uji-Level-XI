@@ -7,33 +7,39 @@
 }
 
 body{
-    background-color: #F7EFE7;
+    background-color: #F2F2F2;
 }
 .container {
     display: flex;
 }
 
 .sidebar {
-    height: 1024px;
-    width: 273px;
+    height: 1000px;
+    width: 280px;
     flex-direction: column;
     align-items: center;
     display: flex;
-    background-color: #bfb0a0;
+    background-color: #F2F2F2;
+    box-shadow: -5px -5px 2px rgba(255,255,255,0.3),
+    2px 2px 2px rgba(0,0,0,0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 30px;
 }
 
 .sidebar .logo {
-    /* background-color: aqua; */
-    padding: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    background-color: #8758FF;
+    padding: 15px 30px;
+    border-radius: 5px;
+    /* padding-left: 50px; */
+    /* padding-right: 60px; */
 }
 
 .sidebar h3 {
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F2F2F2;
     padding: 50px;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 0;
     text-align: center;
     cursor: pointer;
@@ -42,41 +48,52 @@ body{
 .sidebar .menu {
     display: flex;
     flex-direction: column;
-
-    width: 200px;
-    margin-top: 100px;
+    /* width: 150px; */
+    margin-top: 70px;
 }
 
 .sidebar .menu .button {
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
+}
+
+.sidebar .menu .button i {
+    padding: 10px;
 }
 
 .sidebar .menu a{
     text-decoration: none;
     color: #312c38;
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
 }
 
 .sidebar .menu p {
-    padding: 30px;
+    padding: 20px;
 }
 
-.menu a:after {
+.menu a::after {
     content: "";
     position: absolute;
-    background-color: #f7f7f7;
-    height: 6px;
-    width: 0;
+    background-color: #8758FF;
+    height: 2px;
+    width: 0px;
     left: 0;
     bottom: -10px;
     border-radius: 5px;
     transition: 0.3s;
 }
 
-.menu a:hover::after{
+.menu a:hover::after {
+    content: "";
+    position: absolute;
+    background-color: #8758FF;
+    height: 6px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    transition: 0.3s;
     width: 100px;
 }
 
@@ -85,6 +102,7 @@ body{
     position: relative;
     align-items: center;
     width: 82%;
+    margin-top: -80px;
 }
 
 .contain .header {
@@ -105,19 +123,19 @@ body{
     display: flex;
     position: absolute;
     justify-content: center;
-    left: 155px;
-    margin-top: -250px;
+    left: 13%;
+    top: 232px;
     text-align: center;
-    width: 220px;
-    border-bottom: 2px solid #312c38;
-    padding: 5px;
-    /* background-color: aqua; */
+    width: 180px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: #8758FF;
 }
 
 .link_tmbh h4 a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #312c38;
+    font-size: 20px;
+    font-weight: 400;
+    color: #f2f2f2;
     text-decoration: none;
     cursor: pointer;
 }
@@ -127,56 +145,110 @@ body{
     justify-content: center; */
     margin: auto;
     margin-top: 328px;
+    box-shadow: -3px -3px 2px rgba(255,255,255,0.3),
+    1px 1px 1px rgba(0,0,0,0.2),
+    5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 } 
 
 .table table tr th {
     padding: 55px;
     padding-bottom: 15px;
     padding-top: 15px;
-    background-color: #e2dcc8;
+    background-color: #CFD2CF;
     font-size: 24px;
     font-weight: 700;
     color: #312c38;
 }
 
+
 .table table tr td {
     /* padding: 55px; */
     padding-bottom: 30px;
     padding-top: 30px;
-    background-color: #bfb0a0;
+    background-color: #f2f2f2;
 }
 
 .table tr td #a1 {
     border: 1px solid #312c38;
     text-decoration: none;
     color: black;
-    padding: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 8px;
-}
-
-.table tr td #a2 {
-    border: 1px solid #312c38;
-    text-decoration: none;
-    color: black;
+    margin-right: 2px;
     padding: 8px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 8px;
 }
 
+
+.table tr td #a2 {
+    border: 1px solid #312c38;
+    text-decoration: none;
+    color: black;
+    margin-left: 2px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+}
+
+.table tr td #a1:hover{
+    background-color: green;
+    color: #F2F2F2;
+}
+
+.table tr td #a2:hover{
+    background-color: red;
+    color: #F2F2F2;
+}
+
 .content-tambah table{
-    background-color: #bfb0a0;
-    width: 55%;
+    box-shadow: -3px -3px 5px rgba(255,255,255,0.3),
+    1px 1px 5px rgba(0,0,0,0.2),
+    5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    border-bottom: #8758FF 2px solid;
+    border-top: #8758FF 1px solid;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
     padding-left: 50px;
-    margin: 250px;
-    margin-top: 16%;
+    left: 34%;
+    margin-top: 10%;
     position: absolute;
     border-radius: 15px;
+}
+
+ul {
+    position: absolute;
+    top: 300px;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: #8758FF;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 3px;
+}
+
+ul li a.active,
+ul li a:hover {
+    background: #8758FF;
+    color: #f2f2f2;
 }
 
 
@@ -185,33 +257,38 @@ body{
     width: 80%;
     height: 35px;
     border: 1px solid #312c38;
-    border-bottom: 1px solid #e2dcc8;
     margin-top: 20px;
-    border-radius: 5px;
+    background-color: transparent;
+    border-radius: 10px;
 }
 
 .submit {
     padding: 12px 14px;
-    background: #fff;
     color: #312c38;
     border-radius: 5px;
     margin-top: 20px;
     float: right;
     margin-right: 90px;
+    cursor: pointer;
+    background-color: #8758FF;
+    border: 1px solid #312c38;
+    color: #F2F2F2;
 }
 
 .text-area {
     padding-left: 10px;
     width: 80%;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #312c38;
-    border-bottom: 1px solid #e2dcc8;
     margin-top: 20px;
+    background-color: transparent;
 }
 .content-tambah .header {
-    margin-top: 8%;
-    margin-left: 500px;
+    padding: 50px;
+    padding-bottom: -65%;
+    /* margin-bottom: 55%; */
+    left: 45%;
     position: absolute;
     color: #312c38;
 }
