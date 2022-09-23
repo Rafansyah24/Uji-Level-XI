@@ -2,6 +2,7 @@
     include 'koneksi.php';
 
     if (isset($_POST['proses'])) {
+
         $nis = $_POST ['NIS'];
         $nama = $_POST ['nama'];
         $no_tlp = $_POST ['no_telepon'];
@@ -16,5 +17,5 @@
         }else{
             header('Location: edit-siswa.php?status=gagal');
         }
-        }
+    }
 ?>

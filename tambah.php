@@ -2,6 +2,7 @@
 include 'koneksi.php';
 
     if (isset($_POST['proses'])) {
+        
         $nis = $_POST ['NIS'];
         $nama = $_POST ['nama'];
         $telepon = $_POST ['no_telepon'];

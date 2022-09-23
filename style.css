@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-*{
+/* CSS RESET */
+* {
     padding: 0;
     margin: 0;
     font-family: 'Monserrat', sans-serif;
 }
 
-body{
+body {
     background-color: #F2F2F2;
 }
+
 .container {
     display: flex;
 }
 
+
+/* SIDE BAR */
 .sidebar {
     height: 1000px;
     width: 280px;
@@ -20,9 +24,9 @@ body{
     align-items: center;
     display: flex;
     background-color: #F2F2F2;
-    box-shadow: -5px -5px 2px rgba(255,255,255,0.3),
-    2px 2px 2px rgba(0,0,0,0.2),
-    15px 15px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: -5px -5px 2px rgba(255, 255, 255, 0.3),
+        2px 2px 2px rgba(0, 0, 0, 0.2),
+        15px 15px 15px rgba(0, 0, 0, 0.2);
     border-top-right-radius: 30px;
 }
 
@@ -42,7 +46,6 @@ body{
     padding-top: 40px;
     padding-bottom: 0;
     text-align: center;
-    cursor: pointer;
 }
 
 .sidebar .menu {
@@ -61,7 +64,7 @@ body{
     padding: 10px;
 }
 
-.sidebar .menu a{
+.sidebar .menu a {
     text-decoration: none;
     color: #312c38;
     font-size: 20px;
@@ -89,14 +92,12 @@ body{
     position: absolute;
     background-color: #8758FF;
     height: 6px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    border-radius: 5px;
-    transition: 0.3s;
     width: 100px;
+    left: 0;
 }
 
+
+/* MAIN CONTAIN SISWA */
 .contain {
     display: flex;
     position: relative;
@@ -123,11 +124,11 @@ body{
     display: flex;
     position: absolute;
     justify-content: center;
-    left: 13%;
-    top: 232px;
+    left: 12.5%;
+    top: 275px;
     text-align: center;
     width: 180px;
-    padding:10px;
+    padding: 10px;
     border-radius: 5px;
     background-color: #8758FF;
 }
@@ -145,11 +146,11 @@ body{
     justify-content: center; */
     margin: auto;
     margin-top: 328px;
-    box-shadow: -3px -3px 2px rgba(255,255,255,0.3),
-    1px 1px 1px rgba(0,0,0,0.2),
-    5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+        1px 1px 1px rgba(0, 0, 0, 0.2),
+        5px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-} 
+}
 
 .table table tr th {
     padding: 55px;
@@ -192,37 +193,52 @@ body{
     border-radius: 8px;
 }
 
-.table tr td #a1:hover{
+.table tr td #a1:hover {
     background-color: green;
     color: #F2F2F2;
 }
 
-.table tr td #a2:hover{
+.table tr td #a2:hover {
     background-color: red;
     color: #F2F2F2;
 }
 
-.content-tambah table{
-    box-shadow: -3px -3px 5px rgba(255,255,255,0.3),
-    1px 1px 5px rgba(0,0,0,0.2),
-    5px 5px 10px rgba(0, 0, 0, 0.2);
-    width: 50%;
-    border-bottom: #8758FF 2px solid;
-    border-top: #8758FF 1px solid;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 50px;
-    left: 34%;
-    margin-top: 10%;
+.paging ul {
     position: absolute;
-    border-radius: 15px;
+    top: 290px;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.paging ul li {
+    list-style: none;
+}
+
+.paging ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #8758FF;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 3px;
+}
+
+.paging ul li a.active,
+.paging ul li a:hover {
+    background: #8758FF;
+    color: #f2f2f2;
 }
 
 ul {
     position: absolute;
     top: 300px;
-    left: 21%;
+    left: 79%;
     transform: translate(-50%, -50%);
     display: flex;
     margin: 0;
@@ -251,6 +267,87 @@ ul li a:hover {
     color: #f2f2f2;
 }
 
+
+/* HALAMAN TAMBAH */
+
+.content-tambah .header {
+    padding: 50px;
+    padding-bottom: -65%;
+    /* margin-bottom: 55%; */
+    left: 44%;
+    position: absolute;
+    color: #312c38;
+}
+
+.content-tambah table {
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.3),
+        1px 1px 5px rgba(0, 0, 0, 0.2),
+        5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    border-bottom: #8758FF 2px solid;
+    border-top: #8758FF 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 50px;
+    left: 34%;
+    margin-top: 10%;
+    position: absolute;
+    border-radius: 15px;
+}
+
+/* HALAMAN EDIT */
+.content-tambah-siswa .header {
+    padding: 50px;
+    padding-bottom: -65%;
+    /* margin-bottom: 55%; */
+    left: 43%;
+    position: absolute;
+    color: #312c38;
+}
+
+.content-tambah-buku .header {
+    padding: 50px;
+    padding-bottom: -65%;
+    /* margin-bottom: 55%; */
+    left: 43%;
+    position: absolute;
+    color: #312c38;
+}
+
+.content-tambah-siswa table {
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.3),
+        1px 1px 5px rgba(0, 0, 0, 0.2),
+        5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    border-bottom: #8758FF 2px solid;
+    border-top: #8758FF 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 50px;
+    left: 34%;
+    margin-top: 10%;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.content-tambah-buku table {
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.3),
+        1px 1px 5px rgba(0, 0, 0, 0.2),
+        5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    border-bottom: #8758FF 2px solid;
+    border-top: #8758FF 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 50px;
+    left: 34%;
+    margin-top: 10%;
+    position: absolute;
+    border-radius: 15px;
+}
 
 .input {
     padding-left: 10px;
@@ -284,35 +381,39 @@ ul li a:hover {
     margin-top: 20px;
     background-color: transparent;
 }
-.content-tambah .header {
-    padding: 50px;
-    padding-bottom: -65%;
-    /* margin-bottom: 55%; */
-    left: 45%;
-    position: absolute;
-    color: #312c38;
-}
-
 
 .link_tmbh-buku h4 {
     display: flex;
     position: absolute;
     justify-content: center;
     left: 85px;
-    margin-top: -250px;
+    top: 270px;
     text-align: center;
-    width: 220px;
-    border-bottom: 2px solid #312c38;
-    padding: 5px;
-    /* background-color: aqua; */
+    width: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #8758FF;
 }
 
 .link_tmbh-buku h4 a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #312c38;
+    font-size: 20px;
+    font-weight: 400;
+    color: #f2f2f2;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+/* MAIN CONTAIN BUKU */
+.table {
+    /* position: relative;
+    justify-content: center; */
+    margin: auto;
+    margin-top: 328px;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+        1px 1px 1px rgba(0, 0, 0, 0.2),
+        5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .table-buku {
@@ -320,33 +421,40 @@ ul li a:hover {
     justify-content: center; */
     margin: auto;
     margin-top: 328px;
-    width: 1080px;
-} 
+    margin-left: 80px;
+    width: 1090px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+        1px 1px 1px rgba(0, 0, 0, 0.2),
+        10px 10px 5px rgba(0, 0, 0, 0.2);
+}
 
 .table-buku table tr th {
-    padding: 55px;
+    padding: 60px;
     padding-bottom: 15px;
     padding-top: 15px;
-    background-color: #e2dcc8;
-    font-size: 24px;
+    background-color: #CFD2CF;
+    font-size: 20px;
     font-weight: 700;
     color: #312c38;
 }
 
 .table-buku table tr td {
+    font-size: 15px;
     /* padding: 55px; */
     padding-bottom: 30px;
     padding-top: 30px;
-    background-color: #bfb0a0;
+    background-color: #f2f2f2;
 }
 
 .table-buku tr td #a1 {
     border: 1px solid #312c38;
     text-decoration: none;
     color: black;
+    margin-right: 2px;
     padding: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 8px;
 }
 
@@ -354,8 +462,96 @@ ul li a:hover {
     border: 1px solid #312c38;
     text-decoration: none;
     color: black;
+    margin-left: 2px;
     padding: 8px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 8px;
+}
+
+.table-buku tr td #a1:hover {
+    background-color: green;
+    color: #F2F2F2;
+}
+
+.table-buku tr td #a2:hover {
+    background-color: red;
+    color: #F2F2F2;
+}
+
+.search {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 73%;
+    margin-top: -48%;
+}
+
+.search-bar {
+    max-width: 700px;
+    border: #8758FF 1px solid;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2px 15px;
+}
+
+.search-bar input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    color: #312c38;
+}
+
+
+.search-bar button {
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+.search-siswa {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 66%;
+    margin-top: -46.5%;
+}
+
+
+.search-siswa .search-bar {
+    max-width: 700px;
+    border: #8758FF 1px solid;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2px 15px;
+}
+
+.search-siswa .search-bar input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    color: #312c38;
+}
+
+
+.search-siswa .search-bar button {
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
